@@ -5,6 +5,7 @@
     float: right;
     margin: 10px;
     border-radius: 9px;
+    height: auto;
 }
 
 body h1 {
@@ -22,9 +23,18 @@ header {
     border: 1px solid;
 }
 
+main {
+    padding: 15px;;
+}
+
 footer {
     background-color: #008B8B;
     text-align: center;
     color: #ffffff;
+    padding: 15px;
     border: 1px solid;
+}
+
+footer a {
+    color: #ffffff;
 }

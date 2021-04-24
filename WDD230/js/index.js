@@ -1,3 +1,2 @@
-document.querySelector('#year').innerText = new Date().getFullYear();
-var date = newDate(document.lastModified);
-document.querySelector('#lastModified').innerText = date;
+document.querySelector('#current-year').textContent = new Date().getFullYear();
+document.querySelector('#last-modified').textContent = document.lastModified;
