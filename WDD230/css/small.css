@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:ital,wght@1,100&display=swap');
 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+
 .display-pic {
     width: 108px;
     margin: 10px;
@@ -30,7 +41,8 @@ header {
 }
 
 main {
-    padding: 15px;;
+    padding: 15px;
+    flex-grow: 1;
 }
 
 footer {
