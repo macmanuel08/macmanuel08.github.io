@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: #00adb5;
+    background-color: #687980;
 }
 
 nav ul {
@@ -38,8 +38,8 @@ nav ul li a:hover {
     color: #333;
 }
 nav ul li.active a {
-    background-color: #1c6fae;
-    color: #fff;
+    background-color: #eaffd0;
+    color: #1c6fae;
 }
 
 header {
@@ -80,7 +80,7 @@ main p {font-weight: 300;}
 
 footer {
     color: #fff;
-    background-color: #00adb5;
+    background-color: #687980;
     text-align: center;
     padding: 1rem;
     font-family: 'Mukta', sans-serif;
