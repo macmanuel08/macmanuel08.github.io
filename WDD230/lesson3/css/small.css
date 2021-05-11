@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: #69b6de;
+    background-color: #00adb5;
 }
 
 nav ul {
@@ -80,7 +80,7 @@ main p {font-weight: 300;}
 
 footer {
     color: #fff;
-    background-color: #69b6de;
+    background-color: #00adb5;
     text-align: center;
     padding: 1rem;
     font-family: 'Mukta', sans-serif;
