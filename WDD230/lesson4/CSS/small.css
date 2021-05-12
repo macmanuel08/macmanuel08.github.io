@@ -43,6 +43,10 @@ header {
 }
 
 /*----- Navigation Rules ------*/
+#navWrapper nav {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 #navWrapper nav ul {
     list-style-type: none;
@@ -94,7 +98,7 @@ button:hover {
 /*----- Main Rules -----*/
 main {
     margin: 0;
-    padding: .5rem 2%;
+    padding: 0 2%;
     color: #1c6fae;
 }
 
@@ -114,7 +118,7 @@ main div {
 
 /*----- Footer Rule ------*/
 #footerWrapper {
-    color: #4195c9;
+    color: #1c6fae;
     background-color: #d3eaef;
     text-align: center;
     padding: 1rem 0;
