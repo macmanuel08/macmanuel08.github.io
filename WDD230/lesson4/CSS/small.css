@@ -10,6 +10,12 @@ body {
 
 
 /*----- Header Rules ------*/
+#headerWrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #headerWrapper div h1 {
     font-family: 'Arvo', serif;
     margin: 0;

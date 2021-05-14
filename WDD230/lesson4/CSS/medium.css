@@ -7,6 +7,7 @@
     
     /*----------- HEADER --------------*/
         .logo {width: 85px}
+        #headerWrapper header {justify-content: flex-start;}
         #headerWrapper div h1 {font-size: 2rem;}
         #headerWrapper div h2 {font-size: 1.6rem;}
     
