@@ -45,6 +45,10 @@ main {
     flex-grow: 1;
 }
 
+main ul {
+    list-style-type: none;
+}
+
 footer {
     background-color: #008B8B;
     text-align: center;
