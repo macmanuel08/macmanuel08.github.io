@@ -66,9 +66,10 @@
         .article {word-wrap: break-word;}
 
         .article img {
-            width: 190px;
+            width: 220px;
             float: right;
             margin-left: .2rem;
+            margin-bottom: .2rem;
         }
 
         /*----- Contact Section -----*/

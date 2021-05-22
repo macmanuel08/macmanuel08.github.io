@@ -109,6 +109,13 @@ main {
     color: #1c6fae;
 }
 
+main h2 {
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin-top: .2rem;
+}
 
 main div, article {
     margin: 1rem 0;
@@ -130,7 +137,7 @@ main div, article {
     height: auto;
 }
 
-.status h2 {margin-top: 0; border-bottom: 2px dotted;}
+.status h2 {margin-top: 0; margin-bottom: 1.5rem; border-bottom: 2px dotted;}
 
 .weathersummary img {width: 100%;}
 .weathersummary p {margin: .3rem;}
@@ -184,6 +191,17 @@ main div, article {
 }
 
 /*----- Contact Section -----*/
+
+.contactdiv {
+    background-color: #ffffe5;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.contactdiv h2{
+    margin-top: 0;
+}
 
 .contact {
     display: grid;
