@@ -1,0 +1,24 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #00537a;
+  font-size: 16px;
+}
+
+main {
+  padding: 0 2%;
+}
+picture {
+    display: block;
+    margin: 30px auto;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  border: 1px solid black;
+  padding: 5px;
+}
