@@ -124,5 +124,11 @@
         .figure8 {
             grid-column: 2/3;
         }
+
+        /*----- Storm Center Page Rules ------*/
+
+        form label.top input, form label.top select, label.top textarea{
+            max-width: 27rem;
+        }
     }
      /* end of media query */

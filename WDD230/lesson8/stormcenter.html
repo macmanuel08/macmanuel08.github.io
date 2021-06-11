@@ -55,35 +55,41 @@
         <h1>iStorm Center</h1>
 
         <form method="GET" action="thanks.html">
-            <h2>Report a Storm</h2>
-            <label class="top">Full Name* <input type="text" name="name" required pattern="^(\w\w+)\s(\w+)$" minlength="5"></label>
-            <label class="top">Email <input type="email" placeholder="abc@istorm.com" name="email"></label>
-            <label class="top">Phone Number* <input type="tel" required name="phone"></label>
-            <label class="top">Zip Code* <input type="number" required name="zip"></label>
-            <label class="top">Storm Date <input type="date" name="date"></label>
-            <label class="top">Storm Type <input list="storms" name="type"></label>
-            <datalist id="storms">
-                <option value="Flash flood">
-                <option value="Hail">
-                <option value="Hurricane">
-                <option value="Thunderstorm">
-                <option value="Tornado">
-            </datalist>
-            <label class="sbs1">Storm Severity (1-10) <input type="range" name="severity" min="1" max="10" value="5" step="1"></label>
-            <label class="top">Storm Region 
-                <select name="region">
-                        <option value="">Select Region &#9662;</option>
-                    <option value="preston">Preston</option>
-                    <option value="sodaspring">Soda Spring</option>
-                    <option value="fishhaven">Fish Haven</option>
-                </select>
-            </label>
-            <div class="top">User In-Danger level</div>
-            <label class="sbs"><input type="radio" name="level" value="yes"> Yes</label>
-            <label class="sbs"><input type="radio" name="level" value="no"> No</label>
-            <label class="sbs"><input type="radio" name="level" value="maybe"> Maybe</label>
-            <label class="top">Additional information or comments <textarea name="additional"></textarea></label>
-            <input type="Submit" value="Report Storm" class="btn">
+            <fieldset>
+                <legend>Information About You</legend>
+                <label class="top">Full Name* <input type="text" name="name" required pattern="[A-Za-z ]{5,}" minlength="5"></label>
+                <label class="top">Email <input type="email" placeholder="abc@istorm.com" name="email"></label>
+                <label class="top">Phone Number* <input type="tel" required name="phone"></label>
+                <label class="top">Zip Code* <input type="number" required name="zip"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Infromation About Storm</legend>
+                <label class="top">Storm Date <input type="date" name="date"></label>
+                <label class="top">Storm Type <input list="storms" name="type"></label>
+                <datalist id="storms">
+                    <option value="Flash flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <label class="sbs1">Storm Severity (1-10) <input type="range" name="severity" min="1" max="10" value="5" step="1"></label>
+                <label class="top">Storm Region 
+                    <select name="region">
+                            <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaspring">Soda Spring</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+                <div class="top">User In-Danger level</div>
+                <label class="sbs"><input type="radio" name="level" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="level" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="level" value="maybe"> Maybe</label>
+                <label class="top">Additional information or comments <textarea name="additional"></textarea></label>
+                <input type="Submit" value="Report Storm" class="btn">
+            </fieldset>
         </form>
 
     </main>
