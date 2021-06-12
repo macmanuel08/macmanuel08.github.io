@@ -106,7 +106,7 @@ main {
     margin: 0;
     padding: 0 2%;
     font-family: 'Mukta', sans-serif;
-    color: #1c6fae;
+    color: #6a7781;
 }
 
 main h2 {
@@ -323,7 +323,7 @@ textarea {
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #000080;
+    color: #6a7781;
     font-size: 1.2rem;
 }
 
