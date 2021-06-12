@@ -130,5 +130,8 @@
         form label.top input, form label.top select, label.top textarea{
             max-width: 27rem;
         }
+        form fieldset {
+            padding: 1rem 2% 2rem 3rem;
+        }
     }
      /* end of media query */
