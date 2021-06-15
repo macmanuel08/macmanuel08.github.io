@@ -1,0 +1,51 @@
+body {
+    font-size: 16px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Suez One', serif;
+    color: #51aaaf;
+}
+
+section {
+    background-color: #51aaaf;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 2%;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-family: 'Suez One', serif;
+}
+
+section p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section img {
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px #333;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media only screen and (min-width: 35rem) {
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 56rem) {
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
