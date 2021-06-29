@@ -57,6 +57,7 @@ fetch(forecastURL)
         let iconPath = `//openweathermap.org/img/wn/${iconCode}@2x.png`;
         let icon = document.createElement('img');
         icon.setAttribute('class', 'weathericon');
+        icon.setAttribute('alt', 'Weather Icon');
         icon.src = iconPath;
 
         let dayCard = document.createElement('div');
