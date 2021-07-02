@@ -35,7 +35,7 @@
 
         .forecast-mainheader {display: block;}
 
-        .forecast {
+        .forecastpreston, .forecastfish, .forecastsoda {
             display: flex;
             flex-flow: row wrap;
             text-align: center;

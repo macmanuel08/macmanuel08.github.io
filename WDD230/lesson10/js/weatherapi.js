@@ -1,11 +1,11 @@
 /*************************** Weather Summary Section **************************************/
 
-const cityId = 5604473;
+const prestonId = 5604473;
 const appId = '4c6ee178fbcaa341e556052daf49c4ef';
 
-const weatherURL = `//api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${appId}&units=imperial`;
+const weatherURLPreston = `//api.openweathermap.org/data/2.5/weather?id=${prestonId}&appid=${appId}&units=imperial`;
 
-fetch(weatherURL)
+fetch(weatherURLPreston)
   .then((response) => response.json())
   .then((jsObject) => {
     //console.log(jsObject);
@@ -18,7 +18,7 @@ fetch(weatherURL)
 
 /************************************** Forecast Section ********************************/
 
-const forecastURL = `//api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${appId}&units=imperial`;
+const forecastURLPreston = `//api.openweathermap.org/data/2.5/forecast?id=${prestonId}&appid=${appId}&units=imperial`;
 
 const todayDate = new Date();
 
@@ -27,7 +27,7 @@ const todayNumber = todayDate.getDay();
 const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 //console.log(weekday[3]);
 
-fetch(forecastURL)
+fetch(forecastURLPreston)
   .then(response => response.json())
   .then(weatherinfo => {
     //console.log(weatherinfo);

@@ -414,3 +414,22 @@ div.wireframe {
 div.wireframe h2 {
     margin: 0 2% .5rem 2%;
 }
+
+/*----- Event Section Rules -----*/
+
+.event-container {
+    display: flex;
+    justify-content: center;
+}
+
+.events {
+    text-align: center;
+    color: #1c6fae;
+    width: 40ch;
+    padding: 1ch;
+    border: 13px solid #1c6fae;
+}
+
+.events h3 {
+    border-bottom: 3px solid #228B22;
+}
