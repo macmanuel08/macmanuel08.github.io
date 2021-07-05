@@ -33,16 +33,17 @@
     
     /*----- Forecast Section -----*/
 
-        .forecast-mainheader {display: block; margin-top: 1.5rem;}
+        .forecast-mainheader {display: block; margin-bottom: 0;}
         .forecast {
             display: flex;
             flex-flow: row wrap;
             text-align: center;
+            margin-top: .3rem;
         }
 
         .weathercard {
             margin-right: .5rem;
-            margin-top: .3rem;
+            margin-top: 0;
             border: 1px solid #161d6f;
             padding-bottom: 1rem;
         }

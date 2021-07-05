@@ -40,6 +40,7 @@ fetch(forecastURL)
         let icon = document.createElement('img');
         icon.setAttribute('class', 'weathericon');
         icon.setAttribute('alt', 'Weather Icon');
+        icon.setAttribute('loading', 'lazy');
         icon.src = iconPath;
 
         let dayCard = document.createElement('div');

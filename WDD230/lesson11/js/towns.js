@@ -32,6 +32,7 @@ fetch(requestURL)
 
             image.setAttribute('src', `images/${town.photo}`);
             image.setAttribute('alt', `Photo of ${town.name}`);
+            image.setAttribute('loading', 'lazy');
 
             div.appendChild(h2);
             div.appendChild(motto);
