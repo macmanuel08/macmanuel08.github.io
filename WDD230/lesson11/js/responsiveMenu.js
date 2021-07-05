@@ -98,12 +98,10 @@ const diffInTime = date - lastVisitDay;
 const oneDay = 1000 * 60 * 60 * 24;
 const diffInDays = Math.ceil(diffInTime / oneDay);
 
-if (diffInDays < 2) {
-    if (diffInDays == 1) {
-        document.querySelector("#visit").textContent = "Last visit: 1 Day Ago";
-    }
+if (lastVisitDay >= 1 && diffInDays >= 1) {
+    document.querySelector("#visit").textContent = `Last visit: ${diffInDays} Day(s) Ago`;
 } else {
-    document.querySelector("#visit").textContent = `Last visit: ${diffInDays} Days Ago`;
+    document.querySelector("#visit").textContent = "This is your first visit";
 }
 
 localStorage.setItem("lastVisit", date.toISOString());

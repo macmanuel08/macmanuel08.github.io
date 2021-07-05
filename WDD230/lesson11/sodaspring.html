@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Preston page for weather site page as part of project in WDD 230">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soda Spring: iStorm</title>
+    <title>Soda Springs: iStorm</title>
 
     <!-- Fav Icon Link -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -22,8 +22,8 @@
 
     <!-- JS Link -->
     <script type="text/javascript" src="js/responsiveMenu.js" defer></script>
-    <script type="text/javascript" src="js/weatherapi.js" defer></script>
-    <script type="text/javascript" src="js/winchill.js" defer></script>
+    <script type="text/javascript" src="js/weather.js" defer></script>
+    <script type="text/javascript" src="js/forecast.js" defer></script>
     <script type="text/javascript" src="js/event.js" defer></script>
 
 
@@ -49,7 +49,7 @@
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
-                <li class="active"><a href="sodaspring.html">Soda Spring</a></li>
+                <li class="active"><a href="sodaspring.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -59,7 +59,7 @@
 
     <!-- Main Content Section -->
     <main>
-        <h1>Soda Spring Town</h1>
+        <h1 id="cityid">Soda Springs</h1>
 
         <div class="weathersummary">
             <picture>
@@ -70,16 +70,16 @@
             </picture>
             <section class="status">
                 <h2>Weather Summary</h2>
-                <p>Currently: <span id="weatherSoda"></span></p>
-                <p>High: <span id="temperatureSoda"></span>&deg;F</p>
-                <p>Wind Chill: <span id="windchillSoda"></span></p>
-                <p>Humidity: <span id="humiditySoda"></span>%</p>
-                <p>Wind Speed: <span id="windspeedSoda"></span>mph</p>
+                <p>Currently: <span id="weather"></span></p>
+                <p>High: <span id="temperature"></span>&deg;F</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span>mph</p>
             </section>
         </div>
 
         <h2 class="forecast-mainheader">5-Day Forecast</h2>
-        <section class="forecastsoda">
+        <section class="forecast">
         </section>
 
         <article class="article">
@@ -94,7 +94,7 @@
         </article>
 
         <section class="event-container">
-            <div id="eventSoda" class="events">
+            <div id="events" class="events">
                 <h3>Upcoming Events:</h3>
             </div>
         </section>
@@ -128,7 +128,8 @@
     <div id="footerWrapper">
         <footer>
 
-            &copy; John Mark Manuel &bull; <span id="date"></span>
+            &copy; John Mark Manuel &bull; <span id="date"></span><br>
+            <span id="visit"></span>
         </footer>
     </div>
 
