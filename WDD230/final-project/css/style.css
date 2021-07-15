@@ -15,6 +15,20 @@ body {
     background-color: #EDEDED;
 }
 
+.alerts {
+    position: relative;
+    color: #0A1D37;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.alerts div {padding: .5rem;}
+
+.alerts div button {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
 .hide {display: none;}
 
 /** Header Rules **/
@@ -133,6 +147,66 @@ main h3, main h1 {
     color: #1B262C;
 }
 
+.main-content {
+    max-width: 75rem;
+    margin: .8rem auto;
+}
+
+.ads {
+    display: grid;
+}
+
+.ad {
+    background-color: #0A1D37;
+    color: #F1F6F9;
+    margin: .8rem 0;
+}
+
+.ad img {
+    width: 100%;
+    height: inherit;
+}
+
+.ad p {
+    padding-left: .8rem;
+}
+
+.weather-section {
+    position: relative;
+}
+.weather-section img {
+    width: 100%;
+}
+
+.weather {
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+    background-color: #EDEDED;
+    padding: 1rem;
+    opacity: .8;
+}
+
+.forecast-section, .events {
+    text-align: center;
+}
+
+.forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weathercard {
+    border: 3px groove #0A1D37;
+    margin: .5rem;
+    padding: .3rem .8rem;
+}
+
+h4.forecastheader {
+    margin-top: 0;
+}
+
 /** Footer Rules **/
 #footer {
     background-color: #0A1D37;
@@ -165,7 +239,16 @@ main h3, main h1 {
     .hide {display: block;}
 
     /** Main Rules **/
-    
+    .ads {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .8rem;
+    }
+
+    .forecast-events {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
 
 }
 
