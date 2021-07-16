@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="City page for Dagupan Chamber of Commerce which contains historical, geographical, and other things about Dagupan City">
+    <title>Dagupan Chamber</title>
+    <link rel="shortcut icon" href="images/chamber-logo.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS Links -->
+    <script type="text/javascript" src="js/navigation.js" defer></script>
+</head>
+<body>
+    <!-- Alert Section -->
+    <div class="alerts"></div>
+
+    <!-- Header Section -->
+    <div id="header" class="clearfix">
+        <header>
+            <a href="index.html"><img class="logo" src="images/chamber-logo.png" alt="Chamber Logo"></a>
+            <p>Dagupan Chamber<br>of Commerce</p>
+            <button onclick="toggleMenu()" id="navIcon" class="buttonicon">&#9776;</button>
+    </header>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav" class="hide">
+        <nav class="clearfix">
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="dagupan.html">Dagupan</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Section -->
+    <main>
+        <section class="main-content">
+            <h2>Dagupan City</h2>
+            <div class="hero-banner">
+                <picture>
+                    <source media="(max-width: 425px)" srcset="images/tondaligan-sml.jpg">
+                    <source media="(max-width: 768px)" srcset="images/tondaligan-med.jpg">
+                    <source media="(max-width: 1280px)" srcset="images/tondaligan-lrg.jpg">
+                    <img src="images/tondaligan-lrg.jpg" loading="lazy" alt="Longest Cycling Bay in Luzon">
+                    <figcaption>Longest Cycling Bay in Luzon</figcaption>
+                </picture>
+            </div>
+            <article>
+                <h3>History</h3>
+                <p>The area that is now known as Dagupan was described as marshland thickly covered with mangrove and nipa palm trees The natives lived along the shoreline and riverbanks of Calmay, Pantal, and Bonuan. But there were also communities in Malued, Lasip, Pogo, and Bacayao. The natives called the area Bacnotan which would later be incorporated into the encomienda of Lingayen that was established in 1583.</p>
+                <p>The first long distance railroad in the Philippines connecting Manila and Dagupan was opened on November 24, 1892.</p>
+                <p>Dagupan became a city by virtue of Republic Act No. 170, authored by House Speaker Eugenio Pérez. It was signed into law by President Manuel Roxas on June 20, 1947.</p>
+            </article>
+            <article>
+                <h3>Demographic</h3>
+                <p>The city has a population of 171,271 according to 2015 Census. In Dagupan, the Pangasinans are the predominant people and the Pangasinan language is predominantly used in the city and environs, followed by Filipino and English, as well as Ilocano, mainly in Calmay and Pantal. Chinese is mainly spoken only by a few city individuals of Chinese descent.</p>
+            </article>
+            <article>
+                <h3>Bangus Festival</h3>
+                <img class="kalutan" src="images/kalutan.jpg" alt="Kalutan ed Dalan and Street Party During Bangus Festival" loading="lazy">
+                <p>Dagupan is a city located on the Lingayen gulf in the province of Pangasinan in Luzon and is one of the top producers of milkfish or bangus in the province. Bangus is considered the tastiest milkfish in the world.</p>
+                <p>The highlight of the Dagupan Bangus Festival or Philis the grilling of thousands of bangus and followed by a street party. About 10,000 bangus in 1000 grills were grilled along Fernandez Avenue which is a major street of Dagupan during one world record-breaking celebration.</p>
+                <p>In May 3 of 2003, the people of Dagupan city formed the longest bangus barbecue which measured slightly over one kilometer and broke the long-standing world record by Peru in November of 1999 at 613 meters. A laser guided equipment was used to accurately measure the longest bangus barbecue. The victory was shortlived because but in 2005, it reclaimed the same world record for its 2.006 kilometers of barbecue grilling of more than 8000 kilograms of milkfish.</p>
+                <img class="gilon" src="images/gilon.jpg" alt="Gilon-gilon Street Dance During Bangus Festival" loading="lazy">
+                <p>Other activities during the Dagupan Bangus Festival are the parade of street dancers wearing striking costumes and depicting the bountiful harvest of bangus. A group of cooks also demonstrate the different ways, about 101 ways, of cooking bangus before indulging in the juicy and delightful taste of the bangus dishes. You can also withness the local folks of Dagupan debone and eat bangus in a speedy manner. The heaviest, longest and most beautiful bangus caught are also displayed during the occasion.</p>
+                <p>The Dagupan Bangus Festival is considered one of the most exciting festivals in the Philippines and celebrated for a little over two weeks in the month of April and towards the first few days of May with the grilling of bangus in the streets highlighting the occasion. The festival started in the year 2002 and was conceptualized by then Mayor Benjamin Saplan Lim to promote the bangus industry so as to increase sales and production of the local milkfish. At present times, the festival has been considered a globally acclaimed event and best advertisement for the world’s tastiest milkfish.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <footer>
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <p>Phone: 522-6363</p>
+                <p>Email: contact@dagupanchamber.org</p>
+                <p>Address: #18 North St., Dagupan City, Pangasinan</p>
+            </section>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/manuel.jm08" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter Icon"></a><a href="https://www.linkedin.com/in/manuel-jm08" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript" src="js/fontloader.js"></script>   
+</body>
+</html>
