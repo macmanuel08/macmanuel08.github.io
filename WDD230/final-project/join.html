@@ -32,9 +32,9 @@
     <div id="nav">
         <nav class="clearfix">
             <ul id="primaryNav" class="hide">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="dagupan.html">Dagupan</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -42,25 +42,27 @@
     </div>
 
     <!-- Main Section -->
-    <main>
-        <section class="hero">
-            <picture>
-                <source media="(max-width: 450px)" srcset="images/dagupancity-sml.jpg">
-                <source media="(max-width: 800px)" srcset="images/dagupancity-med.jpg">
-                <source media="(max-width: 1500px)" srcset="images/dagupancity-lrg.jpg">
-                <img src="images/dagupancity-lrg.jpg" alt="Dagupan City">
-            </picture>
-            <div class="hero-intro">
-                <h1>Official Chamber of Commerce in Dagupan City</h1>
-                <p>
-                    We invite business people and companies to reside and join the chamber.<br>
-                    This is an association that designed to promote and protect the interests of its members.<br>
-                    It is also our desire to improve businesses and companies in Dagupan City through events and tourist spots in the area.
-                </p>
-                <a href="join.html">JOIN</a>
-            </div>
-        </section>
-
+    <main class="main-content">
+        <div class="form">
+            <h2>Join the Chamber</h2>
+            <form method="GET" action="">
+                <label class="fill">First Name* <input type="text" name="firstname" pattern="[A-Za-z ]{5,}" required autofocus></label>
+                <label class="fill">Last Name* <input type="text" name="lastname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="fill">Title <input type="text" name="title"></label>
+                <label class="fill">Email* <input type="email" name="email" placeholder="abc@dchamber.org" required></label>
+                <label class="fill">Mobile Number <input type="tel" name="phone"></label>
+                <label class="fill">Business Name* <input type="text" name="business" required></label>
+                <label class="fill">Business Address <input type="text" name="address"></label>
+                <label class="fill">Business Website <input type="url" name="website"></label>
+                <label class="fill">Business Description <textarea name="description"></textarea></label>
+                <div class="membership-level">Select Membership Level</div>
+                <label class="choose"><input type="radio" name="membership" value="non-profit"> Non-profit ($100)</label>
+                <label class="choose"><input type="radio" name="membership" value="bronze"> Bronze ($200)</label>
+                <label class="choose"><input type="radio" name="membership" value="silver"> Silver ($400)</label>
+                <label class="choose"><input type="radio" name="membership" value="Gold"> Gold ($1000)</label>
+                <input type="submit" value="Join Chamber" class="btn">
+            </form>
+        </div>
     </main>
 
     <!-- Footer Section -->
