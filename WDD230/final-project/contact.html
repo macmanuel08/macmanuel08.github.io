@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Dagupan Chamber of Commerce which contains the introduction of the site, services, advertisements, and about Dagupan City.">
+    <meta name="description" content="Contact page for Dagupan Chamber of Commerce">
     <title>Home: Dagupan Chamber</title>
     <link rel="shortcut icon" href="images/chamber-logo.png">
 
@@ -16,8 +16,6 @@
     <script type="text/javascript" src="js/navigation.js" defer></script>
 </head>
 <body>
-    <!-- Alert Section -->
-    <div class="alerts"></div>
 
     <!-- Header Section -->
     <div id="header" class="clearfix">
@@ -32,32 +30,54 @@
     <div id="nav">
         <nav class="clearfix">
             <ul id="primaryNav" class="hide">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="dagupan.html">Dagupan</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 
     <!-- Main Section -->
-    <main>
-        <section class="hero">
-            <picture>
-                <source media="(max-width: 450px)" srcset="images/dagupancity-sml.jpg">
-                <source media="(max-width: 800px)" srcset="images/dagupancity-med.jpg">
-                <source media="(max-width: 1500px)" srcset="images/dagupancity-lrg.jpg">
-                <img src="images/dagupancity-lrg.jpg" alt="Dagupan City">
-            </picture>
-            <div class="hero-intro">
-                <h1>Official Chamber of Commerce in Dagupan City</h1>
-                <p>
-                    We invite business people and companies to reside and join the chamber.<br>
-                    This is an association that designed to promote and protect the interests of its members.<br>
-                    It is also our desire to improve businesses and companies in Dagupan City through events and tourist spots in the area.
-                </p>
-                <a href="join.html">JOIN</a>
+    <main class="contact">
+        <section  class="contact-form">
+            <h2>Send Us A Message</h2>
+
+            <form action="message.html" method="GET">
+                <label class="fill-in">Name: <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required autofocus></label>
+                <label class="fill-in">Phone: <input type="tel" name="phone"></label>
+                <label class="fill-in">Email: <input type="email" name="email" required></label>
+                <label class="fill-in">Message: <textarea name="message"></textarea></label>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+
+            <p></p>Phone: 522-6363</p>
+            <p>Email: contact@dagupanchamber.org</p>
+            <p>Address: #18 North St., Dagupan City, Pangasinan</p>
+        </section>
+        <section>
+            <h2>Visit Us</h2>
+            <iframe src="https://maps.google.com/maps?q=Dagupan%20City&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section id="board">
+            <h2>Board of Directors</h2>
+            <div class="board">
+                <div>
+                    <img src="images/christine.jpg" alt="Cristine">
+                    Christine Villar<br>
+                    Vice President
+                </div>
+                <div>
+                    <img src="images/mark.jpg" alt="Mark">
+                    Mark Reyes<br>
+                    President
+                </div>
+                <div>
+                    <img src="images/maine.jpg" alt="Maine">
+                    Maine Santos<br>
+                    Area Manager
+                </div>
             </div>
         </section>
 
@@ -71,6 +91,8 @@
                 <p>Phone: 522-6363</p>
                 <p>Email: contact@dagupanchamber.org</p>
                 <p>Address: #18 North St., Dagupan City, Pangasinan</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p class="attributions"><a href="attributions.html">Attributions</a></p>
             </section>
             <div class="socialmedia">
                 <a href="https://www.facebook.com/manuel.jm08" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter Icon"></a><a href="https://www.linkedin.com/in/manuel-jm08" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>

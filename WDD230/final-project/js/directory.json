@@ -1,0 +1,60 @@
+{
+    "directory": [
+        {
+            "name": "Fine Precision Diagnostic Clinic",
+            "contact": "075-695-4690",
+            "address": "AB Fernandez West, Dagupan City",
+            "link": "https://fineprecisiondag.weebly.com/",
+            "logo": "images/fp.jpg"
+        },
+        {
+            "name": "PLDT",
+            "contact": "075-522-1500",
+            "address": "Nable St., Dagupan City",
+            "link": "https://pldthome.com/",
+            "logo": "images/pldt.jpg"
+        },
+        {
+            "name": "Smart Communications",
+            "contact": "075-614-2173",
+            "address": "Exchange, Dagupan City",
+            "link": "https://smart.com.ph/",
+            "logo": "images/smart.jpg"
+        },
+        {
+            "name": "Star Plaza Hotel",
+            "contact": "075-523-4888",
+            "address": "AB Fernandez Ave., Dagupan City",
+            "link": "https://www.facebook.com/StarPlazaHotelDagupan/",
+            "logo": "images/starplaza.jpg"
+        },
+        {
+            "name": "Dagupan Aqua Farm",
+            "contact": "0998-959-1732",
+            "address": "Bonuan Binloc, Dagupan City",
+            "link": "https://www.facebook.com/dagupanaquafarm",
+            "logo": "images/aquafarmlogo.jpg"
+        },
+        {
+            "name": "Matutina's Seafood Restaurant",
+            "contact": "0977-826-0228",
+            "address": "De Venecia Rd., Brgy. Pantal, Dagupan City",
+            "link": "https://www.facebook.com/matutinaofficial/",
+            "logo": "images/matutinaslogo.jpg"
+        },
+        {
+            "name": "CSI The City Mall",
+            "contact": "075-522-5963",
+            "address": "Lucao District, Dagupan City",
+            "link": "https://csimalls.com/csi-malls/csi-malls/",
+            "logo": "images/csi.jpg"
+        },
+        {
+            "name": "Printise Computers",
+            "contact": "075-202-1713",
+            "address": "Arellano St., Dagupan City",
+            "link": "https://printwisecomputer.com/",
+            "logo": "images/printwise.jpg"
+        }
+    ]
+}

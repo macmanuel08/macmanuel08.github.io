@@ -1,3 +1,5 @@
+/***** Current Weather and Forecast Section *****/
+
 const apiKey = '4c6ee178fbcaa341e556052daf49c4ef';
 const url = `https://api.openweathermap.org/data/2.5/onecall?lat=16.0433&lon=120.3333&exclude=minutely,hourly&appid=${apiKey}&units=metric`;
 
@@ -8,7 +10,7 @@ const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 fetch(url)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    
+
     const weather = weatherInfo.current.weather[0].description.replace(
       /(^\w{1})|(\s+\w{1})/g,
       (letter) => letter.toUpperCase()
@@ -44,6 +46,8 @@ fetch(url)
         document.querySelector('.forecast').appendChild(dayCard);
     }
 
+    /***** Alert Section *****/
+
     if (weatherInfo.hasOwnProperty('alerts')) {
       const alert = document.querySelector('.alerts');
 
@@ -52,7 +56,12 @@ fetch(url)
 
       deletebutton.textContent = '✕';
 
-      alertcontainer.innerHTML = weatherInfo.alerts.description;
+      alertcontainer.innerHTML = `Alert(s):<br><br>`
+
+      for (let i = 0; i < weatherInfo.alerts.length; i++) {
+        alertcontainer.innerHTML += `${weatherInfo.alerts[i].event}<br>`;
+      }
+
       alertcontainer.append(deletebutton);
 
       deletebutton.addEventListener('click', () => {

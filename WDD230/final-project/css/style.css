@@ -7,26 +7,40 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 .clearfix:after {
     content: "";
     display: table;
-    clear: left;
+    clear: both;
 }
 
 body {
     font-size: 16px;
     background-color: #EDEDED;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .alerts {
     position: relative;
-    color: #0A1D37;
+    color: #F1F6F9;
+    background-color: #ff0f0f;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.alerts div {padding: .5rem;}
+.alerts div {padding: 1rem;}
 
 .alerts div button {
     position: absolute;
-    top: .5rem;
-    right: .5rem;
+    top: 1px;
+    right: 1px;
+    background-color: #ff0f0f;
+    color: #F1F6F9;
+    border: 3px solid #F1F6F9;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.alerts div button:hover {
+    background-color: #F1F6F9;
+    color: #ff0f0f;
+    border-color: #ff0f0f;
 }
 
 .hide {display: none;}
@@ -69,13 +83,15 @@ body {
 
 /** Navigation Rules **/
 #nav{
-    background-color: #0A1D37;
     color: #F1F6F9;
     margin-top: -3.2rem;
 }
 
+nav {
+    background-color: #0A1D37;
+}
+
 #nav nav ul {
-    clear: both;
     text-align: center;
     list-style-type: none;
 }
@@ -96,16 +112,7 @@ body {
     text-decoration: underline;
 }
 
-/** Main Rules **/
-main {
-    color: #1B262C;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 3.5rem;
-}
-
- h1, h2, h3 {
-    font-family: Merriweather;
-}
+/** Hero Rules **/
 
 .hero {
     position: relative;
@@ -164,6 +171,19 @@ div.hero-banner {margin-top: 0; margin-bottom: .8rem;}
     margin-top: -30px;
     margin-left: .8rem;
     text-shadow: 2px 1px #1B262C;
+}
+
+/** Main Rules **/
+main {
+    color: #1B262C;
+    font-family: 'Open Sans', sans-serif;
+    margin: 4rem .8rem;
+}
+
+.dagupan {background-color: #0A1D37; color: #F1F6F9; padding: .8rem; margin-bottom: 0;}
+
+ h1, h2, h3 {
+    font-family: Merriweather, serif;
 }
 
 .main-content {
@@ -243,26 +263,49 @@ h4.forecastheader {
 
 /** Form Rules **/
 
-div.form {
+div.membership-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+div.form, div.membership {
     background-color: #F1F6F9;
-    width: 500px;
     padding: .8rem;
     border-radius: 15px;
     box-shadow: 3px 5px 15px #d1d1d1;
+    width: 100%;
+    max-width: 30rem;
+    margin-bottom: 5rem;
 }
+
+div.membership div {
+    margin: .8rem;
+    border: 3px groove #0A1D37;
+}
+
+div.membership div.gold {
+    background-color: #0A1D37;
+    color: #F4CCA4;
+}
+
+div.membership div ul {list-style-type: circle ;}
+
+div.membership div h4 {text-align: center;}
 
 form label.fill, form label.fill input, div.membersip-level, textarea {display: block;}
 
 input, textarea {margin-bottom: .8rem; color: #0A1D37;}
 
 label.fill input, textarea {
-    width: 380px;
+    width: 85%;
+    max-width: 28rem;
     padding: .5rem;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
+    max-height: 20rem;
 }
-
-textarea {height: 200px; min-height: 280px; max-height: 200px; max-width: 380px; min-width: 280px;}
 
 form label.choose {display: block;}
 
@@ -284,6 +327,98 @@ form .btn:hover {
     border: 1px solid #0A1D37;
 }
 
+/** Directory Rules **/
+.displaybtn img {
+    width: 40px;
+}
+
+#directory {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.displaybtn {border: 1px solid #0A1D37; margin-right: .5rem; padding: .5rem;}
+.displaybtn:hover {border-radius: 5px; cursor: pointer; background-color: #F4CCA4;}
+
+.companycard {
+    background-color: #F1F6F9;
+    border: 2px solid #0A1D37;
+    border-radius: 5px;
+    padding: .8rem;
+    width: 410px;
+    margin: .8rem 0;
+}
+
+/** Contact Rules **/
+
+main > section, main > div, main > article {margin-bottom: 5rem;}
+
+iframe {
+    width: 60%;
+    height: 300px;
+}
+
+#board {
+    border: 2px groove #0A1D37;
+    padding: .8rem;
+}
+.board {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.board div {margin: .8rem;}
+
+.board div img {
+    display: block;
+    width: 200px;
+}
+
+.contact-form {
+    background-color: #F1F6F9;
+    padding: .8rem;
+    border-radius: 15px;
+    box-shadow: 3px 5px 15px #d1d1d1;
+}
+
+.contact-form form {
+    margin: .8rem 0 2.5rem 0;
+}
+
+.contact-form label, .contact-form input {
+    display: block;
+}
+
+.contact-form input, .contact-form label textarea {
+    padding: .5rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form label textarea {
+    max-height: 300px;
+    height: 300px;
+    min-width: 300px;
+}
+
+.contact-form .btn {
+    max-width: 250px;
+}
+
+/** Welcome Page Rules **/
+.welcome {
+    background-color: #0A1D37;
+    color: #F1F6F9;
+    padding: 2rem;
+    font-size: large;
+    text-align: center;
+}
+
 /** Footer Rules **/
 #footer {
     background-color: #0A1D37;
@@ -303,6 +438,15 @@ form .btn:hover {
     width: 40px;
 }
 
+.attributions a {
+    color: #F1F6F9;
+}
+
+.attributions a:hover {
+    color: #F4CCA4;
+}
+
+
 /** Meduim Screen **/
 @media only screen and (min-width: 35rem) {
     /** Header Rules **/
@@ -316,6 +460,7 @@ form .btn:hover {
     .hide {display: block;}
 
     /** Main Rules **/
+
     .ads {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .8rem;
@@ -350,9 +495,9 @@ form .btn:hover {
 
     /** Main Rules**/
 
-    main .maincontent{
+    main {
         max-width: 70rem;
-        margin: 0 auto;
+        margin: 2% auto;
     }
 
 }
