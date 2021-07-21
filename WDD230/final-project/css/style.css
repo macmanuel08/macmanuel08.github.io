@@ -18,8 +18,8 @@ body {
 
 .alerts {
     position: relative;
-    color: #EED202;
-    background-color: #ff0f0f;
+    color: #000;
+    background-color: #EED202;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -29,18 +29,18 @@ body {
     position: absolute;
     top: 1px;
     right: 1px;
-    background-color: #ff0f0f;
-    color: #EED202;
-    border: 3px solid #EED202;
+    background-color: #EED202;
+    color: #000;
+    border: 3px solid #000;
     border-radius: 50%;
     width: 30px;
     height: 30px;
 }
 
 .alerts div button:hover {
-    background-color: #EED202;
-    color: #ff0f0f;
-    border-color: #ff0f0f;
+    background-color: #000;
+    color: #EED202;
+    border-color: #EED202;
 }
 
 .hide {display: none;}
