@@ -18,7 +18,7 @@ body {
 
 .alerts {
     position: relative;
-    color: #F1F6F9;
+    color: #EED202;
     background-color: #ff0f0f;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -30,15 +30,15 @@ body {
     top: 1px;
     right: 1px;
     background-color: #ff0f0f;
-    color: #F1F6F9;
-    border: 3px solid #F1F6F9;
+    color: #EED202;
+    border: 3px solid #EED202;
     border-radius: 50%;
     width: 30px;
     height: 30px;
 }
 
 .alerts div button:hover {
-    background-color: #F1F6F9;
+    background-color: #EED202;
     color: #ff0f0f;
     border-color: #ff0f0f;
 }
@@ -156,22 +156,9 @@ nav {
     color: #1B262C;
 }
 
-.main-content h2 {
-    background-color: #0A1D37;
-    color: #F1F6F9;
-    padding: .8rem;
-    margin: .8rem .8rem 0 .8rem;
-}
-
 div.hero-banner {margin-top: 0; margin-bottom: .8rem;}
 
 .hero-banner picture img {width: 100%;}
-.hero-banner picture figcaption {
-    color: #F1F6F9;
-    margin-top: -30px;
-    margin-left: .8rem;
-    text-shadow: 2px 1px #1B262C;
-}
 
 /** Main Rules **/
 main {
@@ -184,15 +171,6 @@ main {
 
  h1, h2, h3 {
     font-family: Merriweather, serif;
-}
-
-.main-content {
-    max-width: 75rem;
-    margin: .8rem auto;
-}
-
-.main-content .hero-banner {
-    margin: 0 .8rem;
 }
 
 article {margin: .8rem;}
