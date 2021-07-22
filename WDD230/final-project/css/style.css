@@ -474,6 +474,7 @@ iframe {
     /** Main Rules**/
 
     main {
+        width: 96%;
         max-width: 70rem;
         margin: 2% auto;
     }
