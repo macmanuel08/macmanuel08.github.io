@@ -68,10 +68,6 @@ body {
     width: 75px;
 }
 
-#header header p, #header header a {
-    margin-top: .8rem;
-}
-
 #header button {
     background-color: #0A1D37;
     color: #F1F6F9;
