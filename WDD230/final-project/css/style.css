@@ -69,7 +69,7 @@ body {
 }
 
 #header header p, #header header a {
-    margin-top: 0 .8rem 0 0;
+    margin-top: .8rem;
 }
 
 #header button {
@@ -474,7 +474,7 @@ iframe {
     /** Main Rules**/
 
     main {
-        width: 96%;
+        width: 98%;
         max-width: 70rem;
         margin: 2% auto;
     }
