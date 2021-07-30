@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+}
+
+header {
+    padding: 1rem 0 1rem 1rem;
+    background-color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+nav button {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 0 2%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #171717;
+    font-family: Sniglet;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px dotted #171717;
+}
+
+.intro {margin-bottom: 1px;}
+
+.job-title {
+    font-family: 'Bungee Shade';
+    font-weight: 500;
+    margin-top: 1px;
+}
+
+.intro {
+    font-family: Sniglet;
+    font-size: 1.5rem;
+}
+
+/*button*/
+.contact-me {
+    border: 2px solid #171717;
+    font-family: Sniglet;
+    background-color: #171717;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.contact-me:hover {
+    background-color: #fff;
+    color: #171717;
+    cursor: pointer;
+}
+
+.hero-section {
+    background-image: url(../images/hero-cover-sml.jpg);
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.profile-photo {
+    margin-right: 1rem;
+}
+
+.profile-photo img {
+    box-shadow: 10px 10px #171717;
+    width: 100%;
+}
+
+/* Medium */
+
+@media only screen and (min-width: 35rem) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        margin-top: 55px;
+        margin-bottom: 0;
+        display: flex;
+    }
+
+    nav ul {
+        margin-bottom: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 0 15px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .hero-section {
+        background-image: url(../images/hero-cover-med.jpg);
+
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .hero-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+/* Large */
+
+@media only screen and (min-width: 56rem) {
+    .hero-section {
+        background-image: url(../images/hero-cover-lrg.jpg);
+    }
+}

@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's me! JM</title>
+    <title>It's me! Mark</title>
+
+    <link rel="shortcut icon" href="jm-icon.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/index.js" defer></script>
 </head>
 <body>
     <header>
-        <nav></nav>
+        <img src="images/jm-logo.svg" alt="Site Logo">
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>Hey!</h1>
+        <div class="hero-section" id="home">
+            <div class="profile-photo">
+                <img src="images/mark-portrait-sml.jpg" alt="John Mark Manuel">
+            </div>
+            <div class="call-to-action">
+                <p class="intro">Hi! I'm Mark</p>
+                <h1 class="job-title">A Frontend Developer</h1>
+                <button class="contact-me">Get In Touch</button>
+            </div>
+        </div>
     </main>
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript" src="js/fontloader.js"></script>
 </body>
 </html>
