@@ -17,8 +17,12 @@ header {
     display: none;
 }
 
-nav button {
-    display: block;
+header button {
+    display: inline;
+    margin-right: auto;
+    margin-left: 0;
+    border: none;
+    background-color: #fff;
 }
 
 nav ul {
@@ -45,8 +49,8 @@ nav ul li a:hover {
 .intro {margin-bottom: 1px;}
 
 .job-title {
-    font-family: 'Bungee Shade';
-    font-weight: 500;
+    font-family: Knewave;
+    font-weight: 400;
     margin-top: 1px;
 }
 
@@ -84,7 +88,13 @@ nav ul li a:hover {
 
 .profile-photo img {
     box-shadow: 10px 10px #171717;
-    width: 100%;
+    width: 170px;
+    height: auto;
+}
+
+.social img {
+    width: 64px;
+    color: #fff;
 }
 
 /* Medium */
@@ -111,23 +121,35 @@ nav ul li a:hover {
         padding: 0 15px;
     }
 
-    nav button {
+    header button {
         display: none;
+    }
+
+    header.fixed {
+        position: fixed;
+        width: 100%;
+        opacity: 0.96;
+        box-shadow: 2px 0 6px #171717;
+        transform: translateY(-60px);
+        top: 58px;
+        transition: transform 300ms ease;
+        transition-delay: 0s;
     }
 
     .hero-section {
         background-image: url(../images/hero-cover-med.jpg);
-
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .hide {
         display: block;
     }
 
-    .hero-section {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .profile-photo img {
+        width: 200px;
+        height: auto;
     }
 
 }
@@ -137,5 +159,10 @@ nav ul li a:hover {
 @media only screen and (min-width: 56rem) {
     .hero-section {
         background-image: url(../images/hero-cover-lrg.jpg);
+    }
+
+    .profile-photo img {
+        width: 500px;
+        height: auto;
     }
 }

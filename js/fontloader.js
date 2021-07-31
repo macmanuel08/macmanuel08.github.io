@@ -1,1 +1,1 @@
-WebFont.load({ google: { families: ['Sniglet', 'Bungee Shade']}});
+WebFont.load({ google: { families: ['Sniglet', 'Knewave']}});

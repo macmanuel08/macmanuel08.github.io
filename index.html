@@ -13,10 +13,10 @@
     <script type="text/javascript" src="js/index.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <img src="images/jm-logo.svg" alt="Site Logo">
+        <button onclick="toggleMenu()">&#9776;</button>
         <nav>
-            <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -29,7 +29,12 @@
     <main>
         <div class="hero-section" id="home">
             <div class="profile-photo">
-                <img src="images/mark-portrait-sml.jpg" alt="John Mark Manuel">
+                <picture>
+                    <source media="(max-width: 425px)" srcset="images/mark-portrait-smlr.jpg">
+                    <source media="(max-width: 768px)" srcset="images/mark-portrait-sml.jpg">
+                    <source media="(max-width: 1440px)" srcset="images/mark-landscape.jpg">
+                    <img src="images/mark-landscape.jpg" alt="John Mark Manuel">
+                </picture>
             </div>
             <div class="call-to-action">
                 <p class="intro">Hi! I'm Mark</p>
@@ -37,9 +42,33 @@
                 <button class="contact-me">Get In Touch</button>
             </div>
         </div>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, cum esse itaque incidunt eos excepturi est praesentium quos, accusamus voluptatum labore? At quidem accusantium molestiae similique error omnis beatae dolore.
+            Quasi dignissimos neque illum mollitia suscipit facilis quas nam nostrum, voluptatum, qui error placeat in molestiae inventore a natus eaque voluptates, sunt dolorem accusamus. Ipsam molestias nostrum consequuntur! Commodi, veniam.
+            Exercitationem rerum asperiores et quas illo voluptate eius voluptas ullam, id, doloribus, corporis animi autem neque voluptatibus distinctio aut consequatur numquam. Nihil suscipit error porro voluptatibus, corporis iusto temporibus ratione.
+            Ipsum velit ipsam beatae optio? Corrupti delectus rerum deserunt eos harum quaerat, aut impedit iusto suscipit sequi dolore dignissimos hic quae numquam laborum, esse reprehenderit optio obcaecati sed amet ad?
+            Consequatur praesentium blanditiis laborum rem deserunt eveniet nemo porro voluptatibus commodi consectetur aliquid quasi saepe sed ab deleniti perspiciatis, doloremque neque, esse ex iure aut velit repellat odio? Repellendus, nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cupiditate voluptate necessitatibus maxime eum, autem sit illum quas corporis deserunt dicta saepe ea in omnis amet, hic voluptatibus placeat quos?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos at deserunt, laboriosam facilis repudiandae est. Quisquam nam facere eveniet qui odio tenetur quas modi, unde officiis quis non exercitationem quidem?
+            Vel accusantium voluptatibus aliquam esse et, ea animi dolorem beatae ad consequuntur excepturi provident laboriosam laborum nostrum voluptates, quas porro corrupti reprehenderit. Ullam aperiam eos minus, quis veritatis voluptates obcaecati.
+            Itaque dignissimos, possimus tempore quibusdam dolore nesciunt delectus. Obcaecati voluptatibus deleniti sapiente. Doloremque amet, eaque ex nulla, maiores, eligendi minus explicabo eveniet praesentium iusto commodi dolores placeat cupiditate quae adipisci?
+            Perspiciatis, veritatis! Temporibus, vero autem eius officia, quasi praesentium eveniet repellendus rerum modi, magni asperiores voluptate. Tempore error expedita pariatur. Quas natus voluptate officia recusandae enim eaque eveniet quam dolore.
+            Nobis provident expedita distinctio ipsa, similique facilis a quos esse modi asperiores. Cum dignissimos cumque natus ex quas officiis officia neque, error ea dolor quam nam facere ipsum excepturi maiores!
+            Neque voluptatum quam totam doloribus sit commodi nostrum voluptas maiores nihil quas laboriosam corporis deleniti atque ducimus nulla est dolorum eveniet veniam vero, iure, quidem officiis facere! Amet, mollitia atque?
+            Aut sunt veniam maiores tenetur? Reiciendis beatae quidem repellendus atque non laudantium aliquid dolores dolorum blanditiis asperiores! Unde nostrum, fugiat sapiente facilis perspiciatis, nesciunt, dicta molestias veniam accusamus recusandae provident.
+            Rerum vero aliquid voluptatum voluptatibus culpa sunt cum velit, mollitia odit magni beatae sapiente, voluptas minus! Alias voluptates consequuntur, veniam minus laboriosam iure? Illum repudiandae dolores, architecto ex amet nihil.
+            Velit quod magnam accusamus fugiat eveniet alias ullam enim, repellendus nam laudantium non tempore ut minima doloribus consequuntur molestias quasi reprehenderit assumenda aperiam. Iusto, fugit quod illo non ad consequatur.
+            Voluptatem, voluptates facere, aliquam, necessitatibus nisi earum temporibus hic sapiente nemo tenetur perferendis dignissimos quia suscipit aperiam culpa laboriosam dolor dolore illo officia. Non velit obcaecati adipisci eius animi quia!
+        </p>
+            <img src="images/jm-doodle-lrg.jpg" alt="Doodle artwork">
+        </section>
     </main>
     <footer>
-
+        <div class="social">
+            <img src="images/fb.svg" alt="Facebook Logo">
+            <img src="images/linkedin.svg" alt="LinkedIn Logo">
+            <img src="images/instagram.svg" alt="Instagram Logo">
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script type="text/javascript" src="js/fontloader.js"></script>
