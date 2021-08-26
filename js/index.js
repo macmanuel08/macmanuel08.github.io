@@ -43,14 +43,58 @@ if ('IntersectionObserver' in window) {
     });
 }
 
+/* Scroll Nav */
 
 window.onscroll = () => {
 
     const header = document.querySelector('#header');
 
-    if (window.scrollY >= window.innerHeight) {
+    if (window.scrollY >= 52) {
         header.classList.add('fixed');
     } else {
         header.classList.remove('fixed');
     }
+}
+
+/* Blog DOM */
+
+fetch("js/blogs.json")
+.then(response => response.json())
+.then(jsonObject => {
+    const blogs = jsonObject['blogs'];
+
+    blogs.forEach(blog => {
+        const div = document.createElement('div');
+        const a = document.createElement('a');
+        const img = document.createElement('img');
+        const description = document.createElement('p');
+        const title = document.createElement('h3');
+
+        a.setAttribute('href', blog.link);
+        a.setAttribute('target', '_blank');
+
+        img.src = blog.image;
+        img.classList.add('blogimg');
+        img.setAttribute('alt', `${blog.title} Cover Photo`);
+        img.setAttribute('loading', 'lazy');
+
+        title.textContent = blog.title;
+        description.textContent = blog.intro;
+
+        a.append(img);
+        a.append(title);
+        a.append(description);
+        div.append(a);
+
+        document.querySelector('.blog-container').append(div);
+    });
+});
+
+
+/* FORM */
+
+function submit() {
+    document.querySelector('.message-status').innerHTML = 'Message Sent!';
+
+    return true;
 }
