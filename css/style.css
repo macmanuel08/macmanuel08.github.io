@@ -72,7 +72,7 @@ div#home {
 /*button*/
 .contact-me {
     border: 2px solid #171717;
-    font-family: Sniglet;
+    font-family: Sniglet, Arial, Helvetica, sans-serif;
     background-color: #171717;
     color: #fff;
     padding: 15px;
@@ -116,7 +116,7 @@ main section {
 }
 
 main section#about {
-    background-color: #6c757d;
+    background-color: #888;
     color: #fff;
 }
 
@@ -154,11 +154,59 @@ main section p {
 }
 
 .blog-container div:hover {
-    box-shadow: 2px 2px 0px #171717;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px 1px #888;
 }
 
 .blogimg {
     width: 100%;
+}
+
+#contact {
+    background-color: #888;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#contact .form label {
+    display: block;
+    margin-left: .8rem;
+}
+
+#contact .form input {
+    display: block;
+    margin-top: .2rem;
+    margin-bottom: .8rem;
+    width: 100%;
+    max-width: 500px;
+    padding: .3rem;
+}
+
+textarea {
+    display: block;
+    padding: .3rem;
+    max-width: 500px;
+    min-width: 300px;
+    margin-top: .5rem;
+    min-height: 300px;
+}
+
+#contact form input.btn {
+    width: 100%;
+    max-width: 240px;
+    margin: .8rem;
+    border: 2px solid #171717;
+    font-family: Sniglet, Arial, Helvetica, sans-serif;
+    background-color: #171717;
+    color: #fff;
+    padding: 15px;
+    border-radius: 999px;    
+}
+
+#contact form input.btn:hover {
+    background-color: #fff;
+    color: #171717;
 }
 
 footer {
@@ -254,6 +302,11 @@ footer {
     
     main section p {
         grid-column: 1/3;
+    }
+
+    textarea {
+        max-width: 680px;
+        min-width: 680px;
     }
 
 }
