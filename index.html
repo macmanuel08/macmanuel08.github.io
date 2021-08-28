@@ -60,12 +60,12 @@
         <section id="contact">
             <h2>Get In Touch</h2>
             <div class="form">
-                <form action="https://formsubmit.co/manueljm016@gmail.com" method="POST">
+                <form action="https://formsubmit.co/manueljm016@gmail.com" method="POST" id="form">
                     <label>First Name* <input name="firstname" type="text" pattern="[A-Za-z ]{5,}" required></label>
                     <label>Last Name* <input name="firstname" type="text" required></label>
                     <label>Phone Number <input name="phone" type="tel"></label>
                     <label>Email* <input name="email" type="email" required placeholder="mark@mymail.com"></label>
-
+                    <label>Message <textarea name="message" form="form"></textarea></label>
                     <p class="message-status"></p>
                     <input type="submit" value="Send Message" class="btn">
                 </form>
