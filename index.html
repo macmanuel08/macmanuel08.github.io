@@ -13,67 +13,53 @@
     <script type="text/javascript" src="js/index.js" defer></script>
 </head>
 <body>
-    <header id="header">
-        <img src="images/jm-logo.svg" alt="Site Logo">
-        <button onclick="toggleMenu()">&#9776;</button>
+    <header>
+        <div>
+            <img src="images/jm-logo.svg" alt="Site Logo">
+            <div id="menu-icon">
+                <span>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                </span>
+            </div>
+        </div>
         <nav>
-            <ul id="primaryNav" class="hide">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div id="navigation">
+                <ul>
+                    <li><a href="#home">Intro</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="hero-section" id="home">
-            <div class="profile-photo">
-                <picture>
-                    <source media="(max-width: 425px)" srcset="images/mark-portrait-smlr.jpg">
-                    <source media="(max-width: 768px)" srcset="images/mark-portrait-sml.jpg">
-                    <source media="(max-width: 1440px)" srcset="images/mark-landscape.jpg">
-                    <img src="images/mark-landscape.jpg" alt="John Mark Manuel">
-                </picture>
-            </div>
-            <div class="call-to-action">
-                <p class="intro">Hi! I'm Mark</p>
-                <h1 class="job-title">A Frontend Developer</h1>
-                <a class="contact-me" href="#contact">Get In Touch</a>
+        <div class="hero">
+            <p>It's Me!</p>
+            <h1 class="hero-text">MARK</h1>
+            <div class="intro">
+                <div class="static-text">I'M A</div>
+                <ul class="dynamic-text">
+                    <li><span>PART ARTIST/DESIGNER</span></li>
+                    <li><span>PART COMPUTER GEEK</span></li>
+                    <li><span>FRONTEND DEVELOPER</span></li>
+                </ul>
             </div>
         </div>
-        <section id="about">
-            <h2>About Me</h2>
-            <div>
+        <div id="about">
+            <div class="img-container">
+                <img src="images/mark-landscape.jpg" alt="It's me Mark!">
+            </div>
+            <div class="description">
                 <p>
-                    I'm a part artist and part computer geek. When I was a kid, I used to draw some anime characters; copying them from small cards and I also make doodle arts. I also got engage with computers, browsing the web, and playing online games. It brought me to realization to combine my litte talent in art and interest in technology. Then I learn about web and software development through Brigham Young University-Idaho as an online student.
+                    I'm a junior student at Brigham Young University in Idaho majoring in Bachelor of Science in Applied Technology. 
+                    I have a certificate in Frontend Development which is awarded by my university. 
+                    I have a little sense with designs and a passion with technology that's why I decided to be a web developer.
                 </p>
-                <p>
-                    I chose Brigham Young University-Idaho not because they are offering degrees online for little amount of money. I was caught by its mission to develop each student to become leaders in their homes, community, and church. The university's mission statement is not just written to display but something that is applied by the university's officers, faculty, and students.
-                </p>
-                <img src="images/jm-doodle-lrg.jpg" alt="Doodle artwork" loading="lazy">
             </div>
-        </section>
-        <section id="blogs">
-            <h2>My Blogs</h2>
-            <div class="blog-container"></div>
-        </section>
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <div class="form">
-                <form action="https://formsubmit.co/manueljm016@gmail.com" method="POST" id="form">
-                    <label>First Name* <input name="firstname" type="text" pattern="[A-Za-z ]{5,}" required></label>
-                    <label>Last Name* <input name="firstname" type="text" required></label>
-                    <label>Phone Number <input name="phone" type="tel"></label>
-                    <label>Email* <input name="email" type="email" required placeholder="mark@mymail.com"></label>
-                    <label>Message <textarea name="message" form="form"></textarea></label>
-                    <p class="message-status"></p>
-                    <input type="submit" value="Send Message" class="btn">
-                </form>
-            </div>
-            <div class="contact-info">
-
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
         <h3>Follow Me</h3>

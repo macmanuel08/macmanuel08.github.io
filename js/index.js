@@ -1,8 +1,17 @@
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
+/* Navigation Menu */
+let menuIcon = document.getElementById("menu-icon");
+menuIcon.addEventListener('click', toggleNav);
+
+function toggleNav() {
+  /* Menu Button Animation */
+  let updateElement = document.getElementById("menu-icon"); //toggle adds a class if it's not there or removes it if it is.
+  updateElement.classList.toggle("open");
+
+  /* Toggle Navigation Menu */
+  document.getElementById("navigation").classList.toggle("display");
 }
 
-/*         Slide In           */
+/* Slide In */
 
 // Getting all images with data-src attribute
 const imagesToLoad = document.querySelectorAll("img[data-src]");
@@ -56,9 +65,9 @@ window.onscroll = () => {
     }
 }
 
-/* Blog DOM */
+/* Projects DOM */
 
-fetch("js/blogs.json")
+fetch("js/projects.json")
 .then(response => response.json())
 .then(jsonObject => {
     const blogs = jsonObject['blogs'];

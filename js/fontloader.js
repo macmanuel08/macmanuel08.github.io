@@ -1,1 +1,1 @@
-WebFont.load({ google: { families: ['Sniglet', 'Knewave', 'Noto Sans JP']}});
+WebFont.load({ google: { families: ['Source Code Pro', 'Bungee', 'Nunito', 'Roboto']}});

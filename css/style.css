@@ -14,202 +14,192 @@ header {
     margin-bottom: 0;
 }
 
-.hide {
-    display: none;
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header button {
-    display: inline;
-    border: none;
-    background-color: #fff;
-    font-size: x-large;
-    float: right;
-    margin: 2rem 0;
+header div img {
+    width: 3rem;
 }
 
-nav ul {
+/* Hamburger Button */
+
+#menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #3d3d3d;
+    border-radius: 5px;
+    padding: 2px;
+    transition: 0.4s;
+}
+
+#menu-icon:hover span div {background-color: 2px solid #3d3d3d;}
+
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #3d3d3d;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .open .bar2 {opacity: 0;}
+  
+  .open .bar3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+
+/* Navigation */
+nav div {display: none;}
+div.display {display: block;}
+
+nav div#navigation {
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 1.3rem;
+    animation: menu 500ms ease-in-out alternate;
+}
+
+@keyframes menu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+div#navigation ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-
-nav ul li {
     text-align: center;
-    padding: .8rem;
 }
 
-nav ul li a {
+div#navigation li {
+    padding: 5px;
+}
+
+ul li a {
     text-decoration: none;
-    color: #171717;
-    font-family: Sniglet;
+    color: #3d3d3d;
 }
 
-nav ul li a:hover {
-    border-bottom: 2px dotted #171717;
-}
+/* Main */
 
-div#home {
-    margin-top: 0;
+/* Hero */
+div.hero {
+    width: 100%;
+    height: 90vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.intro {margin-bottom: 1px;}
-
-.job-title {
-    font-family: Knewave;
-    font-weight: 400;
-    margin-top: 1px;
-}
-
-.intro {
-    font-family: Sniglet;
-    font-size: 1.5rem;
-}
-
-/*button*/
-.contact-me {
-    text-decoration: none;
-    border: 2px solid #171717;
-    font-family: Sniglet, Arial, Helvetica, sans-serif;
-    background-color: #171717;
-    color: #fff;
-    padding: 15px;
-    border-radius: 999px;
-    display: inline-block;
-}
-
-.contact-me:hover {
-    background-color: #fff;
-    color: #171717;
-    cursor: pointer;
-}
-
-.hero-section {
-    background-image: url(../images/hero-cover-sml.jpg);
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
-}
-
-.profile-photo {
-    margin-right: 1rem;
-}
-
-.profile-photo img {
-    box-shadow: 10px 10px #171717;
-    width: 170px;
-    height: auto;
-}
-
-div.call-to-action {
+    padding: 10px;
     text-align: center;
 }
 
-main section, main div {
-    margin-bottom: 5rem;
-}
-
-main section {
-    width: 100%;
-    padding: 1rem;
-}
-
-main section#about {
-    background-color: #888;
-    color: #fff;
-}
-
-main section#about div img {
-    width: 100%;
-}
-
-main section h2, h3 {
-    font-family: Sniglet, Helvetica, sans-serif;
-}
-
-main section p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 100;
-}
-
-.blog-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.blog-container div {
-    width: 300px;
-    margin-right: 3rem;
-}
-
-.blog-container div a {
-    text-decoration: none;
-    color: #171717;
-}
-
-.blog-container div a h3, .blog-container div a p {
-    padding: .8rem;
+div.hero p {
+    font-family: 'Source Code Pro', sans-serif;
     margin: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
-.blog-container div:hover {
-    border-radius: 5px;
+div h1.hero-text {
+    margin: 0;
+    font-family: 'Bungee', Verdana, sans-serif;
+    font-size: calc(3rem + 7vw);
+    font-weight: 500;
+
+    background-image: url(../images/code.jpg);
+    background-size: cover;
+    background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+div.hero div.intro {
+    text-align: left;
+    font-family: 'Source Code Pro', sans-serif;
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-weight: 400;
+    min-width: 395px;
+    justify-content: center;
+}
+
+div.hero div.intro ul.dynamic-text {
+    margin: 0;
+    padding: 0;
+    margin-left: 12px;
     overflow: hidden;
-    box-shadow: 1px 1px 4px 1px #888;
+    line-height: 2.8rem;
+    height: 2.8rem;
+    
 }
 
-.blogimg {
+ul.dynamic-text li span {position: relative;}
+
+ul.dynamic-text li span::after {
+    content: '';
+    position: absolute;
+    height: 90%;
     width: 100%;
-}
-
-#contact {
-    background-color: #888;
-    color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-#contact .form label {
-    display: block;
-    margin-left: .8rem;
-}
-
-#contact .form input {
-    display: block;
-    margin-top: .2rem;
-    margin-bottom: .8rem;
-    width: 100%;
-    max-width: 500px;
-    padding: .3rem;
-}
-
-textarea {
-    display: block;
-    padding: .3rem;
-    max-width: 500px;
-    min-width: 300px;
-    margin-top: .5rem;
-    min-height: 300px;
-}
-
-#contact form input.btn {
-    width: 100%;
-    max-width: 240px;
-    margin: .8rem;
-    border: 2px solid #171717;
-    font-family: Sniglet, Arial, Helvetica, sans-serif;
-    background-color: #171717;
-    color: #fff;
-    padding: 15px;
-    border-radius: 999px;    
-}
-
-#contact form input.btn:hover {
+    border-left: 2px solid #3d3d3d;
+    left: 0;
+    top: 2px;
+    animation: typing 3s steps(16) infinite;
     background-color: #fff;
-    color: #171717;
 }
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+div.hero div.intro ul li {
+    list-style: none;
+    position: relative;
+    top: -11.5px;
+    animation: slideup 9s steps(3) infinite;
+}
+
+@keyframes slideup {
+    100% {top: -146px;}
+}
+
+
+/* About */
+
+div#about {
+    height: 100vh;
+    background-color: #3d3d3d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    outline: 2px solid #fff;
+    outline-offset: -10px;
+}
+
+div#about img {
+    width: 200px;
+}
+div.description p {
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+/* Footer */
 
 footer {
     display: flex;
@@ -234,100 +224,46 @@ footer {
 
 /* Medium */
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 40rem) {
 
-    header {
+    div#menu-icon {display: none;}
+    nav div#navigation {display: block; font-size: 1rem;}
+    nav div#navigation ul {display: flex;}
+    nav div#navigation ul li {margin-right: 15px;}
+    nav div#navigation ul li a:hover {text-decoration: underline;}
+
+    div#about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    div#about img {
+        width: 300px;
+    }
+
+    div.description {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
     }
-
-    nav {
-        margin-top: 55px;
-        margin-bottom: 0;
-        display: flex;
-    }
-
-    nav ul {
-        margin-bottom: 0;
-    }
-
-    nav ul li {
-        display: inline-block;
-        padding: 0 15px;
-    }
-
-    header button {
-        display: none;
-    }
-
-    header.fixed {
-        position: fixed;
-        width: 100%;
-        opacity: 0.96;
-        box-shadow: 2px 0 6px #171717;
-        transform: translateY(-60px);
-        top: 58px;
-        transition: transform 300ms ease;
-        transition-delay: 0s;
-    }
-
-    .hero-section {
-        background-image: url(../images/hero-cover-med.jpg);
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    }
-
-    div.call-to-action {
-        text-align: start;
-    }
-
-    .hide {
-        display: block;
-    }
-
-    .profile-photo img {
-        width: 200px;
-        height: auto;
-    }
-
-    main section#about div {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-column-gap: 10px;
-    }
-    
-
-    main section#about div img {
-        grid-column: 3/4;
-        grid-row: 1/3;
-    }
-    
-    main section p {
-        grid-column: 1/3;
-    }
-
-    textarea {
-        max-width: 680px;
-        min-width: 680px;
-    }
-
 }
 
 /* Large */
 
 @media only screen and (min-width: 56rem) {
-    .hero-section {
-        background-image: url(../images/hero-cover-lrg.jpg);
+    header {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .profile-photo img {
-        width: 500px;
-        height: auto;
+    div#about {padding: 50px;}
+
+    div#about img {
+        width: 450px;
     }
 
-    main section {
-        max-width: 70rem;
-        margin-left: auto;
-        margin-right: auto;
+    div.description {
+        padding-left: 80px;
     }
 }
