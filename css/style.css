@@ -91,7 +91,7 @@ ul li a {
 /* Hero */
 div.hero {
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,7 +167,7 @@ ul.dynamic-text li span::after {
 div.hero div.intro ul li {
     list-style: none;
     position: relative;
-    top: -11.5px;
+    top: -10.9px;
     animation: slideup 9s steps(3) infinite;
 }
 
@@ -179,7 +179,7 @@ div.hero div.intro ul li {
 /* About */
 
 div#about {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #3d3d3d;
     color: #fff;
     display: flex;
