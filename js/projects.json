@@ -1,22 +1,32 @@
 {
-    "blogs": [
+    "projects": [
         {
-            "title": "Philippine Airlines Ad Design",
-            "intro": "In this reverse engineer post, we will critique how the designer implemented design principles to create an ad for Philippine Airlines. I found the design on Pinterest posted by Your City Guide.",
-            "image": "images/pal.jpg",
-            "link": "https://manueljm08.wordpress.com/2020/11/30/philippine-airlines-ad-design/"
+            "icon": "images/umbrella.svg",
+            "iconName": "umbrella icon",
+            "name": "Weather App",
+            "description": "Displays weather info of some places in Idaho, USA. This is responsive web app. Made with HTML5, CSS3, and vanilla JS, Fetch API, and DOM manipulation.",
+            "link": "https://macmanuel08.github.io/WDD230/lesson11/"
         },
         {
-            "title": "Magazine Spread Typography & Photography",
-            "intro": "We will critique this magazine spread using the principles of typography and photography. Let us see how the designer used effective typography to communicate with the audience.",
-            "image": "images/magspread.jpg",
-            "link": "https://manueljm08.wordpress.com/2020/10/17/magazine-spread-typography-photography/"
+            "icon": "images/chart.svg",
+            "iconName": "chart icon",
+            "name": "COVID-19 App",
+            "description": "You can search a live COVID-19 data of a specific country. Displays the COVID-19 data worldwide. Made with HTML5, CSS3, and Vanilla JS, Fetch API, and DOM manipulation.",
+            "link": "https://macmanuel08.github.io/wdd330/covid19-api/"
         },
         {
-            "title": "Advertisement Design Analysis",
-            "intro": "The purpose of this reverse engineer post is to analyze the ad design above made by Majestic, a clothing brand.",
-            "image": "images/majestic.jpg",
-            "link": "https://manueljm08.wordpress.com/2020/09/23/ad-design-analysis/"
+            "icon": "images/leaf.svg",
+            "iconName": "leaf icon",
+            "name": "Zen Garden",
+            "description": "My group's version of Zen Garden Project. Zen Garden is to demonstrate what you can do with CSS. My group and I made this with SASS and GitHub.",
+            "link": "https://macmanuel08.github.io/wdd331-group5/"
+        },
+        {
+            "icon": "images/game.svg",
+            "iconName": "board game icon",
+            "name": "Tenzies Game",
+            "description": "Roll the dice, freeze the dice with same numbers, roll the dice again until all the dice have the same numbers. Made with React JS.",
+            "link": "https://macmanuel08.github.io/tenzies/"
         }
     ]
 }

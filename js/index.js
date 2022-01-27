@@ -52,50 +52,46 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-/* Scroll Nav */
-
-window.onscroll = () => {
-
-    const header = document.querySelector('#header');
-
-    if (window.scrollY >= 52) {
-        header.classList.add('fixed');
-    } else {
-        header.classList.remove('fixed');
-    }
-}
-
 /* Projects DOM */
 
 fetch("js/projects.json")
 .then(response => response.json())
 .then(jsonObject => {
-    const blogs = jsonObject['blogs'];
+    const projects = jsonObject['projects'];
 
-    blogs.forEach(blog => {
+    projects.forEach(project => {
         const div = document.createElement('div');
-        const a = document.createElement('a');
+        const divicon = document.createElement('div');
         const img = document.createElement('img');
+        const title = document.createElement('h4');
         const description = document.createElement('p');
-        const title = document.createElement('h3');
+        const btn = document.createElement('div');
+        const a = document.createElement('a');
 
-        a.setAttribute('href', blog.link);
-        a.setAttribute('target', '_blank');
-
-        img.src = blog.image;
-        img.classList.add('blogimg');
-        img.setAttribute('alt', `${blog.title} Cover Photo`);
+        img.src = project.icon;
+        img.classList.add('icon');
+        img.setAttribute('alt', project.iconName);
         img.setAttribute('loading', 'lazy');
+        divicon.append(img);
+        divicon.classList.add('divicon');
 
-        title.textContent = blog.title;
-        description.textContent = blog.intro;
+        title.textContent = project.name;
+        description.textContent = project.description;
+        description.classList.add('description');
 
-        a.append(img);
-        a.append(title);
-        a.append(description);
-        div.append(a);
+        a.setAttribute('href', project.link);
+        a.setAttribute('target', '_blank');
+        a.append('Take A Look')
+        btn.append(a);
+        btn.classList.add('link-btn');
 
-        document.querySelector('.blog-container').append(div);
+        div.append(divicon);
+        div.append(title);
+        div.append(description);
+        div.append(btn);
+        div.classList.add('project-card');
+
+        document.querySelector('.projects-container').append(div);
     });
 });
 
