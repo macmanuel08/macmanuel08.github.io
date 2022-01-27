@@ -1,5 +1,11 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -223,6 +229,8 @@ div#projects h3 {
 div.projects-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
 }
 
 div.project-card {
@@ -235,7 +243,7 @@ div.project-card {
     background-color: #fff;
     flex: 1;
     padding: 15px 20px;
-    margin: 10px 20px;
+    margin: 15px 15px;
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
