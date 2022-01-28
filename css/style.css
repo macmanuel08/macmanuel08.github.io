@@ -288,13 +288,17 @@ div.link-btn a {
 /* Footer */
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     border-top: 1.5px groove hsla(0, 1%, 27%, 0.377);
     color: hsl(0, 1%, 43%);
     font-family: 'Nunito', Verdana, sans-serif;
+    padding: 15px;
+}
+
+div.contact-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .social a img {
@@ -303,10 +307,18 @@ footer {
 }
 
 .social a img:hover {
-    transform: translateY(-10px);
-    transition: transform 250ms linear 0s;
-
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
 }
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
 
 /* Medium */
 
@@ -333,6 +345,8 @@ footer {
         justify-content: center;
         padding-left: 20px;
     }
+
+    div.contact-social {flex-direction: row;}
 }
 
 /* Large */
