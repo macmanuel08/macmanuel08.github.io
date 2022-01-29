@@ -8,6 +8,13 @@
             "link": "https://macmanuel08.github.io/WDD230/lesson11/"
         },
         {
+            "icon": "images/todo.svg",
+            "iconName": "to-do list icon",
+            "name": "To-do List App",
+            "description": "You can add a to-do item, mark done items, completely delete items, filter items with all, active, or completed. Made with vanilla JS. I used the localStorage API for saving and removing list item.",
+            "link": "https://macmanuel08.github.io/wdd330/ch1/"
+        },
+        {
             "icon": "images/chart.svg",
             "iconName": "chart icon",
             "name": "COVID-19 App",
