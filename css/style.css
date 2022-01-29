@@ -308,8 +308,7 @@ div.link-btn a {
     color: #fff;
 }
 
-div.link-btn a:hover,
-div.link-btn :focus {
+div.link-btn a:hover {
     color: #3d3d3d;
 }
 
