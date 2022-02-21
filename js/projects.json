@@ -34,6 +34,13 @@
             "name": "Tenzies Game",
             "description": "Roll the dice, freeze the dice with same numbers, roll the dice again until all the dice have the same numbers. Made with React JS.",
             "link": "https://macmanuel08.github.io/tenzies/"
+        },
+        {
+            "icon": "images/kitchen.svg",
+            "iconName": "spoon and fork icon",
+            "name": "Kitchen Warehouse",
+            "description": "Coded a wireframe from Kitchen Warehouse, an Australia-based company. This shows my skill in developing a website from a Figma file to HTML and CSS files. This is only for desktop and not responsive version.",
+            "link": "https://macmanuel08.github.io/kitchenware/"
         }
     ]
 }
