@@ -5,7 +5,7 @@
             "iconName": "umbrella icon",
             "name": "Weather App",
             "description": "Displays weather info of some places in Idaho, USA. This is responsive web app. Made with HTML5, CSS3, and vanilla JS, Fetch API, and DOM manipulation.",
-            "link": "https://macmanuel08.github.io/WDD230/lesson11/"
+            "link": "https://macmanuel08.github.io/weather/"
         },
         {
             "icon": "images/todo.svg",
