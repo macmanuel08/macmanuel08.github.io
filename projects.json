@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "key": 1,
+            "thumbnailURL": "/birdsEyeViewLC-logo.png",
+            "name": "Bird's Eye View League City",
+            "url": "https://admin.roya.com/sites/Site-bf370941-9202-4e82-ac7a-e94976191a0d/",
+            "description": "I developed a fully customized website that features a hero slider, interactive hover effects, and dynamic sliders. This bespoke design delivers an engaging user experience, showcasing the client's unique offerings with contemporary and interactive elements. The result is a visually striking and highly functional website."
+        },
+        {
+            "key": 2,
+            "thumbnailURL": "/costaleyeassociates-logo.png",
+            "name": "Costal Eye Associates",
+            "url": "https://www.coastaleyeassociates.net/",
+            "description": "This fully customized website, built using Tailwind CSS, features unique designs and functionalities tailored to the client's needs. Like my other projects, it includes dynamic elements such as sliders, resulting in a modern and highly engaging online presence."
+        },
+        {
+            "key": 3,
+            "thumbnailURL": "/swoopeyecare-logo.png",
+            "name": "Swoop Eyecare",
+            "url": "https://www.swoopeye.com/",
+            "description": "A fully customized website featuring a captivating hero video, interactive hover effects, and dynamic sliders. This bespoke design ensures an engaging user experience, highlighting the client's unique offerings with modern and interactive elements. The result is a visually stunning and highly functional website tailored to the client's specific needs."
+        },
+        {
+            "key": 4,
+            "thumbnailURL": "/eyecare-studio-logo.png",
+            "name": "The Eyecare Studio",
+            "url": "https://www.theeyecarestudio.com/",
+            "description": "This project features a slider showcasing customer reviews and highlighted eyewear brands. The website is 80% customized from a template to reflect the client's branding and functional needs, offering an engaging and visually appealing online presence."
+        },
+        {
+            "key": 5,
+            "thumbnailURL": "/dry-eye-spa-logo.png",
+            "name": "The Dry Eye Spa",
+            "url": "https://www.dryeyespakc.com/",
+            "description": "Slightly customized a template to match the client's brand with adjusted colors and fonts. Section layouts were modified based on client suggestions, resulting in a modern, responsive site that effectively communicates the client's vision."
+        }
+    ]
+}
